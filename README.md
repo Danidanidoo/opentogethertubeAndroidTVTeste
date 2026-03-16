@@ -30,3 +30,12 @@ App Android TV baseada em `WebView` que abre **sempre** a room:
 ## Build
 
 Este repositório contém os ficheiros base de um projeto Android (Gradle Kotlin DSL).
+
+## Gerar APK para download (GitHub Actions)
+
+Como este ambiente pode bloquear downloads de dependências (erro 403), foi adicionado workflow para compilar na infraestrutura do GitHub:
+
+1. Vai ao separador **Actions** no repositório.
+2. Executa o workflow **Build Android TV APK**.
+3. No fim, descarrega o artefacto **opentogethertube-tv-debug-apk**.
+4. O ficheiro gerado é `app-debug.apk`.
