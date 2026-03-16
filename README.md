@@ -39,3 +39,13 @@ Como este ambiente pode bloquear downloads de dependências (erro 403), foi adic
 2. Executa o workflow **Build Android TV APK**.
 3. No fim, descarrega o artefacto **opentogethertube-tv-debug-apk**.
 4. O ficheiro gerado é `app-debug.apk`.
+
+## Correção de ecrã preto / barra superior
+
+Foram aplicadas correções para Android TV/WebView:
+
+- Reforço de cookies e third-party cookies para sessão da room.
+- Reload automático para a room fixa se o site navegar para outra rota.
+- Ocultação contínua da barra superior (login/create/language) para fullscreen real.
+- Reforço de layout fullscreen do vídeo e tentativa de autoplay quando existir stream.
+- Retry automático em caso de erro de rede no frame principal.
